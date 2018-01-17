@@ -63,7 +63,7 @@ type Config struct {
 // NewConfig creates and initializes a new Config with default values.
 func NewConfig() *Config {
 	return &Config{
-		FastOpen:            false,
+		FastOpen:            true,
 		Naggle:              false,
 		ServerAddr:          ":8080",
 		HTTP2:               true,
