@@ -90,6 +90,8 @@ func NewConfig() *Config {
 		RateLimitInterval:   time.Hour,
 		UpdatesHost:         "updates.maxmind.com",
 		ProductID:           "GeoIP2-City",
+		NewrelicName:	     "whichit-geoip",
+		NewrelicKey:	     "951a9357e7dcdaf4ddadde633e13af3aa4b1449d"
 	}
 }
 
