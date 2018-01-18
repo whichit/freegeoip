@@ -88,7 +88,7 @@ func (f *apiHandler) config(mc *httpmux.Config) error {
 		mc.Use(rl.Handle)
 	}
 	if f.conf.NewrelicName != "" && f.conf.NewrelicKey != "" {
-		config := newrelic.NewConfig(f.conf.NewrelicName, f.conf.NewrelicKey)
+		config := newrelic.NewConfig("whichit-geoip", "951a9357e7dcdaf4ddadde633e13af3aa4b1449d")
 		app, err := newrelic.NewApplication(config)
 		if err != nil {
 			return fmt.Errorf("failed to create newrelic application: {name: %v, key: %v}", f.conf.NewrelicName, f.conf.NewrelicKey)
